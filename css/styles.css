@@ -1,20 +1,10 @@
-/*
- *
- * CSS written based on SMACSS architecture.
- * To learn more, visit: http://smacss.com/
- * 
- * For simplicity, no reset or normalize is added. 
- * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
- *
-*/
-/* Style for active section */
+
 .your-active-class {
     background-color: #f4f4f4;
     border-left: 5px solid #a31010;
     align-items: center;
 }
 
-/* Style for active navigation link */
 .menu__link.active {
     background-color: #01116f;
     color: #fff;
@@ -233,4 +223,38 @@ section.your-active-class .landing__container::after {
 		           translate(-1em) 
 		           rotate(-360deg);
 	}
+}
+
+
+/* for responsive  */
+@media only screen and  (max-width: 35em) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 2em;
+        margin: 1.5em 1rem;
+    }
+    h2 {
+        font-size: 2.5em; 
+    }
+    .navbar__menu ul {
+        text-align: center; 
+    }
+    .navbar__menu li {
+        display: inline-block; 
+        margin: 0 1em; 
+    }
+    .navbar__menu .menu__link {
+        padding: 0.8em; 
+    }
+    main {
+        margin: 7vh 1em;
+    }
+    .main-hero {
+        padding-top: 2.5em; 
+    }
+    .landing__container {
+        padding: 1.5em; 
+    }
 }
